@@ -1,16 +1,34 @@
 # 🐍 Python Programming Repository
 
 Welcome to my **Python Programming Repository** 🚀  
-This repository contains a collection of Python programs focused on **fundamentals, data structures, problem-solving, and AI/ML basics**.
+This repository contains Python programs covering **fundamentals, problem-solving, data structures, and machine learning projects**.
 
 ---
 
 ## 📌 About
 This repository is created to:
 - Strengthen **Python fundamentals**
-- Practice **problem-solving and logic building**
-- Prepare for **coding interviews and assessments**
-- Build a base for **AI, Machine Learning, and Data Science**
+- Practice **problem-solving**
+- Prepare for **coding interviews**
+- Build a foundation in **AI/ML & Data Science**
+
+---
+
+## 🚀 Projects
+
+### 🏦 Loan Approval Prediction System
+- Developed a Machine Learning model to predict loan approval status
+- Performed **data preprocessing & feature engineering**
+- Applied **Logistic Regression & Decision Tree**
+- Evaluated model using accuracy, confusion matrix
+- Built a simple prediction interface
+
+🔧 Tech Stack:  
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 ---
 
@@ -18,9 +36,8 @@ This repository is created to:
 
 ### 🔹 Core Python
 - Variables & Data Types
-- Operators
-- Conditional Statements (if-else)
-- Loops (for, while)
+- Conditional Statements
+- Loops
 - Functions
 
 ### 🔹 Object-Oriented Programming
@@ -30,35 +47,31 @@ This repository is created to:
 - Polymorphism
 
 ### 🔹 Data Structures
-- Lists
-- Tuples
-- Sets
-- Dictionaries
+- Lists, Tuples, Sets, Dictionaries
 - Strings
 
-### 🔹 Problem Solving
-- Pattern Programs
-- Recursion
-- Searching & Sorting
-- Logical Problems
+### 🔹 Machine Learning 🔥
+- Data Preprocessing
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Classification Algorithms
 
-### 🔹 Libraries & Data Science
+### 🔹 Data Science Libraries
 - NumPy
 - Pandas
 - Matplotlib
-- Basic Data Analysis
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Python installed (>= 3.x)
-- IDE (VS Code / PyCharm / Jupyter Notebook)
+- Python 3.x installed
+- VS Code / PyCharm / Jupyter Notebook
 
 ---
 
 ### ▶️ Run a Program
-
 ```bash
 python filename.py
