@@ -18,18 +18,22 @@ This repository is created to:
 
 ### 🏦 Loan Approval Prediction System
 - Developed a Machine Learning model to predict loan approval status
-- Performed **data preprocessing & feature engineering**
-- Applied **Logistic Regression & Decision Tree**
-- Evaluated model using accuracy, confusion matrix
+- Performed data preprocessing & feature engineering
+- Applied Logistic Regression & Decision Tree
+- Evaluated model using accuracy and confusion matrix
 - Built a simple prediction interface
 
-🔧 Tech Stack:  
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+---
 
+## 🔧 Tech Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=matplotlib&logoColor=black"/>
+</p>
 ---
 
 ## 📂 Topics Covered
