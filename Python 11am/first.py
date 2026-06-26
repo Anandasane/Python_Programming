@@ -59,3 +59,4 @@ print(type(a))
 b = 'i am learning python'
 print(b)
 print(type(b))
+
