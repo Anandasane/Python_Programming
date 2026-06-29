@@ -93,6 +93,5 @@ print(100//3)
 
 print(2**10)
 
-a=int(input("enter any datatype value:"))
+a=int(input("enter any datatype value: "))
 print(type(a))
-
