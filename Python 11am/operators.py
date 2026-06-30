@@ -78,7 +78,7 @@ z = 39
 z /= 2
 print(f'the decremental division value by 2 is :{z}')
 
-# floor division Operator (returns only the value not after the decimal)
+# 4. floor division Operator (returns only the value not after the decimal)
 print("Floor division of a // b:", a//b)
 print("Current value of c:", c)
 c = a//b
@@ -90,7 +90,7 @@ print("Value of z:", z)
 z //= 10
 print(f'the floor division by 10 is: {z}')
 
-# Percent Operator (returns the remainder of the division )
+# 5. Percent Operator (returns the remainder of the division )
 a = 24
 print("Value of a:", a)
 print(f'the remainder of the number by 10: {a%10}')
@@ -132,3 +132,5 @@ print("When a=100 and b=-1000 -> Is a less than b?:", a < b)
 print("When a=100 and b=-1000 -> Is a less than or equal to b?:", a <= b)
 print("When a=100 and b=-1000 -> Is a greater than or equal to b?:", a >= b)
 
+a = 2
+print(a**2)
