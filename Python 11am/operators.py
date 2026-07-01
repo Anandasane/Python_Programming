@@ -134,3 +134,26 @@ print("When a=100 and b=-1000 -> Is a greater than or equal to b?:", a >= b)
 
 a = 2
 print(a**2)
+
+# logical operator
+a= 10
+b= 20
+f= 23
+print("When a=10, b=20, f=23 -> Is a less than b AND f greater than b?:", a < b and f > b)
+print("When a=10, b=20, f=23 -> Is a less than b OR f greater than b?:", a < b or f > b)
+print("When a=10, b=20, f=23 -> Is NOT (a less than b AND f greater than b)?:", not (a < b and f > b))
+
+print("When a=10, b=20, f=23 -> Is NOT (a less than b OR f greater than b)?:", not (a < b or f > b))
+print("When a=10, b=20, f=23 -> Is NOT (a less than b AND f greater than b)?:", not (a < b and f > b))
+print("When a=10, b=20, f=23 -> Is NOT (a less than b OR f greater than b)?:", not (a < b or f > b))
+a=20
+b=20
+c=20.0
+
+print(" ",a is b)
+print(b is c)
+print(c is a)
+
+print(a is not b)
+print(b is not c)
+print(c is not a)
