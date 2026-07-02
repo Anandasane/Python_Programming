@@ -22,6 +22,8 @@ print(index)
 replace = word.replace('z','T')
 print(replace)
 
+# EXERCISE
+
 from datetime import datetime
 
 # user= str(input("Enter your name: "))
@@ -54,14 +56,19 @@ formatted_letter = "Dear Harry,\n\tThis python course is nice.\nThanks!"
 # Print the result
 print(formatted_letter)
 
-# list and tuple
+# List and Tuple
+
+# List
 l1 = [7,9,"harry"] 
 l1[0] # 7 
 l1[1] # 9 
-l1[70]  # error 
+#l1[70]  # error 
 l1[0:2] # [7,9]  #list slicing 
 
 l1 = [1,8,7,2,21,15]
+
+# List Methods 
+
 l1.sort() # sort the list in ascending order
 print(l1) # [1, 2, 7, 8, 15, 21]
 l1.reverse() # reverse the list
@@ -69,3 +76,19 @@ l1.append(99) #
 l1.insert(2,18) #
 l1.pop(3) #
 l1.remove(21) #
+
+# tuple in python is immutable, meaning its elements cannot be changed after creation.
+
+a = () # empty tuple 
+a = (1,) # tuple with only one element needs a comma 
+a = (1,7,2) # tuple with more than one element 
+
+# Tuple Methods
+a=(2,3,1,1,4)
+print(a.count(1)) # returns number of times 1 occurs
+print(a.index(1)) # returns first index when 1 occurs
+
+# EXERCISE
+
+user = list(input("Enter a 7 fruits: "))
+print(user)

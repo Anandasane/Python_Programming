@@ -157,3 +157,50 @@ print(c is a)
 print(a is not b)
 print(b is not c)
 print(c is not a)
+
+# Binary operator 
+print("Printing Binary Operators")
+
+print(bin(12))
+print(bin(13))
+print(bin(14))
+print(bin(16))
+
+# And
+print("Printing And operations")
+print(12 & 13)
+print(12 & 14)
+print(12 & 16)
+
+# OR
+print("Printing OR operations")
+print(12 | 13)
+print(12 | 14)
+print(12 | 16)
+
+# NOT
+print("Printing NOT operations")
+print(~12)
+print(~13)
+print(~14)
+print(~16)
+
+# XOR
+print("Printing XOR operations")
+print(12 ^ 13)
+print(12 ^ 14)
+print(12 ^ 16)
+
+# LEFT SHIFT
+print("Printing LEFT SHIFT operations")
+print(12<<1)
+print(13<<2)
+print(14<<3)
+print(16<<1)
+
+# RIGHT SHIFT
+print("Printing RIGHT SHIFT operations")
+print(12>>1)
+print(13>>1)
+print(14>>2)
+print(16>>2)
