@@ -23,6 +23,7 @@ replace = word.replace('z','T')
 print(replace)
 
 # EXERCISE
+# problem 1
 
 from datetime import datetime
 
@@ -90,5 +91,33 @@ print(a.index(1)) # returns first index when 1 occurs
 
 # EXERCISE
 
-user = list(input("Enter a 7 fruits: "))
-print(user)
+fruits_list=[]
+print("Please enter 7 fruits: ")
+
+for i in range(1,8):
+    fruits = input(f"Enter fruits{i}: ")
+    fruits_list.append(fruits)
+
+print("\nYour fruit list is:")
+print(fruits_list)
+
+# problem 2
+
+# Initialize an empty list to store the marks
+marks_list = []
+
+print("Please enter the marks of 6 students:")
+
+# Loop 6 times to collect the marks
+for i in range(1, 7):
+    # Convert input to float to accept decimals (e.g., 85.5)
+    mark = float(input(f"Enter marks for student {i}: "))
+    marks_list.append(mark)
+
+# Sort the list in ascending order (lowest to highest)
+marks_list.sort()
+
+# Display the sorted marks
+print("\nThe marks in sorted manner are:")
+print(marks_list)
+

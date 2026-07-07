@@ -204,3 +204,4 @@ print(12>>1)
 print(13>>1)
 print(14>>2)
 print(16>>2)
+
