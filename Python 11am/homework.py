@@ -180,25 +180,47 @@ for i in range(1,11):
 
 
 # Problem 23 Print numbers from 1 to 100, skipping prime numbers.
-for i in range(1, 101):
-    if i == 1:
-        print(i)
+#method 1
+# for i in range(1, 101):
+#     if i == 1:
+#         print(i)
+#         continue
+
+#     is_prime = True
+#     # Check divisors from 2 up to the square root of i
+#     for j in range(2, int(i**0.5) + 1):
+#         if i % j == 0:
+#             is_prime = False
+#             break  # Found a factor, so it's not prime
+
+#     # If is_prime is still True, it means no factors were found
+#     if not is_prime:
+#         print(i)
+
+# method 2
+
+for num in range(1, 101):
+    if num < 2:
+        print(num)
         continue
 
     is_prime = True
-    # Check divisors from 2 up to the square root of i
-    for j in range(2, int(i**0.5) + 1):
-        if i % j == 0:
-            is_prime = False
-            break  # Found a factor, so it's not prime
 
-    # If is_prime is still True, it means no factors were found
-    if not is_prime:
-        print(i)
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        continue  # Skip prime numbers
+
+    print(num)
+
+
 
 # Problem 24 Print numbers from 1 to 100, skipping perfect squares.
 for i in range(1, 101):
-    root = int(i**0.5)
+    root =int(i**0.5)
     
     if root * root == i:
         continue  
@@ -246,3 +268,4 @@ for i in range(1,101):
         continue
     else:
         print(i)
+

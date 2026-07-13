@@ -85,4 +85,31 @@ for i in range(1,100):
     else:
         print("try Again")
         
-    
+# check whether a number is prime 
+
+n = int(input("Enter a number: "))
+p= True
+
+for i in range(2,n):
+    if(n%i==0):
+        p=False
+        break
+
+if p:
+    print("it is a prime")
+else:
+    print("it is not a prime")
+
+# print the fibonacci series 
+
+n=int(input("Enter a number"))
+a=0
+b=1
+for i in range(n):
+    print(a,end=" ")
+    c=a+b
+    a=b
+    b=c
+
+# printing a prefect square
+
