@@ -205,3 +205,7 @@ print(13>>1)
 print(14>>2)
 print(16>>2)
 
+a=10
+b=16
+print(a^b)
+

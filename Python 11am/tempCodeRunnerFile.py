@@ -1,7 +1,11 @@
-for i in range(1, 101):
-    root =(i**0.5)
+sum=0
+for i in range(1,101):
     
-    if root * root == i:
-        continue  
-    else:
-        print(i)
+    if(i==80):
+        break
+    elif(i%8==0):
+        continue
+    elif(i%4==0):
+        sum = sum +i
+
+print("the sum of the numbers is ",sum)
