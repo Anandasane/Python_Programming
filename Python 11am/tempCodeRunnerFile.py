@@ -1,11 +1,7 @@
-sum=0
-for i in range(1,101):
-    
-    if(i==80):
-        break
-    elif(i%8==0):
-        continue
-    elif(i%4==0):
-        sum = sum +i
+for i in range(1,70):
+    if(i==10 or i==20 or i==30):
+        print()
 
-print("the sum of the numbers is ",sum)
+    if(i%5==0):
+        continue
+    print(i,end=' ')

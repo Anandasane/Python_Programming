@@ -69,5 +69,5 @@ for i in range(1,101):
         c+=1
 
 
-print("the count of the number is ",c)
+print("the count of the number divisible by 3 is ",c)
 
