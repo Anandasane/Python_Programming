@@ -62,4 +62,19 @@ for i in range(1,40):
         continue
     print(i,end=' ')
 
+for i in range(1,4):
+    for j in range(1,7):
+        if(j%2==0):
+            print('X',end=" ")
+        else:
+            print('0',end=" ")
+    print()
+
+for i in range(1,4):
+    for j in range(1,7):
+        if((i+j)%2==0):
+            print('X',end=" ")
+        else:
+            print('0',end=" ")
+    print()
 

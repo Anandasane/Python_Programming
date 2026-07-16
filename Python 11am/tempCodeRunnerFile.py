@@ -1,7 +1,7 @@
-for i in range(1,70):
-    if(i==10 or i==20 or i==30):
-        print()
-
-    if(i%5==0):
-        continue
-    print(i,end=' ')
+for i in range(1,4):
+    for j in range(1,7):
+        if((i+j)%2==0):
+            print('X',end=" ")
+        else:
+            print('0',end=" ")
+    print()
