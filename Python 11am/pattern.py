@@ -78,3 +78,45 @@ for i in range(1,4):
             print('0',end=" ")
     print()
 
+# Triangle pattern
+
+n=int(input("Enter a number: "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+
+n=int(input("Enter a number: "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print()
+
+n=int(input("Enter a number: "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+n=int(input("Enter a number: "))
+c=0
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        c+=1
+        print(c,end=" ")
+    print()
+
+
+
+n=int(input("Enter a number: "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i*j,end=" ")
+    print()
+
+
+n=int(input("Enter a number: "))
+for i in range(n,n-1):
+    for j in range(n,i-1):
+        print("*",end=" ")
+    print()

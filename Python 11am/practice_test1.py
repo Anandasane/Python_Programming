@@ -71,3 +71,21 @@ for i in range(1,101):
 
 print("the count of the number divisible by 3 is ",c)
 
+# 4 Write a program for print 1 to n number table using nested for loop
+
+n= int(input("Enter a number: "))
+for i in range(1,n+1):
+    for j in range(1,11):
+        print(f"{i} X {j}={i*j}")
+    print()
+
+
+# 5 Write a program find factorial 1 to n number using nested for
+
+n=int(input("Enter a number: "))
+
+for i in range(1,n+1):
+    f=1
+    for j in range(1,i+1):
+      f=f*j
+    print(f"the factorial of the number {i} is:",f)
