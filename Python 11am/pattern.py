@@ -115,8 +115,42 @@ for i in range(1,n+1):
     print()
 
 
-n=int(input("Enter a number: "))
-for i in range(n,n-1):
-    for j in range(n,i-1):
-        print("*",end=" ")
+for i in range (6,0,-1):
+    for j in range(1,6):
+        if(j==i):
+            print('-',end=" ")
+        else:
+            print("*",end=" ")
     print()
+
+
+
+for i in range (6,0,-1):
+    for j in range(1,6):
+        if(j>=i):
+            print('*',end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+for i in range(9,0,-1):
+    for j in range(1,9):
+        
+        if(j>=i):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")   
+        
+        for k in range(2*i-1):
+            print("*")
+
+    print()
+    
+
+
+print("  * ")
+print(" *** ")
+print("******")
+
