@@ -16,7 +16,7 @@ for i in range(1,5):
     
     print()
 
-
+# printing numbers in square pattern
 c=0
 for i in range(1,4):
     for j in range(1,6):
@@ -24,6 +24,8 @@ for i in range(1,4):
         print(c,end=" ")
 
     print()
+
+# printing numbers and skipping some numbers
 
 # for i in range(1,40):
     
@@ -86,6 +88,8 @@ for i in range(1,n+1):
         print("*",end=" ")
     print()
 
+# printing number pattern
+
 n=int(input("Enter a number: "))
 for i in range(1,n+1):
     for j in range(1,i+1):
@@ -114,6 +118,7 @@ for i in range(1,n+1):
         print(i*j,end=" ")
     print()
 
+# square pattern with diagonal space
 
 for i in range (6,0,-1):
     for j in range(1,6):
@@ -124,7 +129,7 @@ for i in range (6,0,-1):
     print()
 
 
-
+# right angle triangle form left
 for i in range (6,0,-1):
     for j in range(1,6):
         if(j>=i):
@@ -133,27 +138,21 @@ for i in range (6,0,-1):
             print(" ",end=" ")
     print()
 
+# paryamid
 
-
-for i in range(9,0,-1):
+for i in range(1,9):
     for j in range(1,9):
         
-        if(j>=i):
+        if(j>=9-i):
             print("*",end=" ")
         else:
             print(" ",end=" ")   
         
-        for k in range(2*i-1):
-            print("*")
+    for k in range(1,i):
+        print("*",end=" ")
 
     print()
     
 
-print(9)
-
-
-print("  * ")
-print(" *** ")
-print("******")
 
 

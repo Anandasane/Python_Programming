@@ -1,9 +1,10 @@
-s=11
-
-while(True):
-   n = int(input("Enter your password: "))
-   if(n==s):
-      print("sucessfully loged in !") 
-      break
+i=1
+while(i<=100):
+   if(i==40):
+         break
+   if(i%2==0):
+      print(f"{i} is even ")
    else:
-      print("Try Again")  
+      print(f"{i} is odd ")
+   i+=1
+   
