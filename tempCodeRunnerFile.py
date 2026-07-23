@@ -1,10 +1,7 @@
-i=1
-while(i<=100):
-   if(i==40):
-         break
-   if(i%2==0):
-      print(f"{i} is even ")
-   else:
-      print(f"{i} is odd ")
-   i+=1
-   
+s=100
+while(s>0):
+    if(s%5==0):
+        s-=1
+        continue
+    print(s)
+    s-=1
