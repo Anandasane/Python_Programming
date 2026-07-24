@@ -360,8 +360,87 @@ while num <= 100:
 
 s=100
 while(s>0):
+    s-=1
     if(s%5==0):
-        s-=1
         continue
     print(s)
-    s-=1
+    
+
+
+i=1
+while(i<=20):
+    print(i,end=" ")
+    if(i%5==0):
+        print()
+    i+=1
+
+
+
+i=1
+while(i<30):
+   # i+=1
+    if(i<=10):
+        print(i,end=" ")
+    i+=1
+    if(i%10==0 or i%5==0):
+        continue
+    #i+=1
+
+    
+s=0
+while(s<=30):
+    s+=1
+    if(s%10==0):
+        print()
+    if(s%5==0):
+        continue
+    print(s,end=" ")
+
+
+
+
+s=0
+while(s<25):
+    s+=1
+    if(s%5==0):
+        print()
+    if(s==1 or s==3 or s==5):
+        print("0" * 5)
+    else:
+        print("x"* 5)
+    
+    
+s=1
+while(s<25):
+    s+=1
+    if(s==1):
+        print("0",end=" ")
+    if(s%2==0):
+        print("x", end=" ")
+    else:
+        print("0",end=" ")
+    if(s%5==0):   
+        print()
+
+
+
+# check for pallindrome
+
+n=int(input("Enter a number: "))
+temp=n
+rev=0
+rem=0
+while(n>0): 
+    rem= n%10
+    rev = rev * 10 + rem
+    n=n//10
+    
+
+print("the reverse number is: ",rev)
+
+if(temp==rev):
+    print(f"{temp} is a pallindrome number ")
+else: 
+    print(f"{temp} is not a pallindrome number ")
+
+
