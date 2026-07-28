@@ -3,6 +3,7 @@ a=1
 
 while(a<10):
    print("hello")
+   a+=1
 
 n=int(input("Enter a number: "))
 a=1
@@ -408,7 +409,12 @@ while(s<25):
         print("0" * 5)
     else:
         print("x"* 5)
-    
+
+#  X O X O X
+#  X O X O X
+#  X O X O X
+#  X O X O X
+#  X O X O X
     
 s=1
 while(s<25):
@@ -422,7 +428,11 @@ while(s<25):
     if(s%5==0):   
         print()
 
-
+# X X X X X
+# O O O O O
+# X X X X X
+# O O O O O
+# X X X X X
 
 # check for pallindrome
 
