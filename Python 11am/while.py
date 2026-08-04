@@ -330,7 +330,7 @@ while num <= 100:
     print(num)
     num += 1
 
-# num = 1
+
 while num <= 30:
     if num % 2 == 0:
         num += 1
@@ -379,13 +379,12 @@ while(i<=20):
 
 i=1
 while(i<30):
-   # i+=1
+   
     if(i<=10):
         print(i,end=" ")
     i+=1
     if(i%10==0 or i%5==0):
         continue
-    #i+=1
 
     
 s=0
@@ -400,15 +399,21 @@ while(s<=30):
 
 
 
-s=0
-while(s<25):
-    s+=1
-    if(s%5==0):
-        print()
-    if(s==1 or s==3 or s==5):
-        print("0" * 5)
+i = 0
+while i < 25:
+    col = i % 5  # Calculates the column number (0, 1, 2, 3, 4)
+    
+    # If column is even (0, 2, 4), print X. If odd, print O.
+    if col % 2 == 0:
+        print("X", end=" ")
     else:
-        print("x"* 5)
+        print("O", end=" ")
+        
+    # If we just finished the 5th column (index 4), move to a new line
+    if col == 4:
+        print()
+        
+    i += 1
         
 
 #  X O X O X
@@ -419,13 +424,19 @@ while(s<25):
     
 s = 1
 while s <= 25:
-    if s % 2 != 0:
+    # Determine which row number we are currently on (0 to 4)
+    row = (s - 1) // 5
+    
+    # Even rows (0, 2, 4) print X, Odd rows (1, 3) print O
+    if row % 2 == 0:
         print("X", end=" ")
     else:
         print("O", end=" ")
-    
+        
+    # At the end of every 5 columns, move to the next line
     if s % 5 == 0:
         print()
+        
     s += 1
 
 # X X X X X
@@ -470,3 +481,5 @@ b = 12 + 4j
 print(a*b)
 print((a*b).real)
 print((a*b).imag)
+
+
