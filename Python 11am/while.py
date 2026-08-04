@@ -409,6 +409,7 @@ while(s<25):
         print("0" * 5)
     else:
         print("x"* 5)
+        
 
 #  X O X O X
 #  X O X O X
@@ -416,17 +417,16 @@ while(s<25):
 #  X O X O X
 #  X O X O X
     
-s=1
-while(s<25):
-    s+=1
-    if(s==1):
-        print("0",end=" ")
-    if(s%2==0):
-        print("x", end=" ")
+s = 1
+while s <= 25:
+    if s % 2 != 0:
+        print("X", end=" ")
     else:
-        print("0",end=" ")
-    if(s%5==0):   
+        print("O", end=" ")
+    
+    if s % 5 == 0:
         print()
+    s += 1
 
 # X X X X X
 # O O O O O
@@ -454,3 +454,19 @@ else:
     print(f"{temp} is not a pallindrome number ")
 
 
+a = 30.5
+b=78
+c=a+b
+print(type(c))
+
+a=10j + 10j
+print(a)
+print(a.real)
+print(a.imag)
+
+a = 13 + 5j
+b = 12 + 4j
+
+print(a*b)
+print((a*b).real)
+print((a*b).imag)
