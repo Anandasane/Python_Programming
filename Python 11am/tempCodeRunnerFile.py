@@ -1,6 +1,4 @@
-a=53+5j
-s=str(a)
-print(type(s))
+s=[10,39,33,[4,44,66,2,4,22],35,[6,77,0],56,43,321,45]
+print(s[3][3])
+s.append(s[3])
 print(s)
-
-print(s.real)
