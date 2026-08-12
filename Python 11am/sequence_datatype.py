@@ -104,3 +104,28 @@ for i in range(0,len(b)):
     i+=1
 
 
+# a=[10,35,24,66,43,33,65]
+
+# val=int(input('Enter the value you want to insert: '))
+# pos=int(input('Enter the position you want to insert the value in: '))
+
+
+# for i in range(0,len(a)):
+#     if(i==pos):
+#         a[i] = val
+#         temp= a[i]
+    
+
+# print(a)
+
+                
+a=[10,35,24,66,43,33,65]
+val=int(input('Enter the value you want to insert: '))
+pos=int(input('Enter the position you want to insert the value in: '))
+
+print(a)
+
+a[pos:pos]=[val]
+print(a)
+
+
