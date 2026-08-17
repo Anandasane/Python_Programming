@@ -1,8 +1,7 @@
-a=[10,35,24,66,43,33,65]
-val=int(input('Enter the value you want to insert: '))
-pos=int(input('Enter the position you want to insert the value in: '))
+student ={'id': 101 , 'name':'anand', 'course':'data analytics', 
+          'id':201 , 'name':'chetan', 'course': 'ai'}
 
-print(a)
+print(student)
+print(type(student))
 
-a[pos:pos]=[val]
-print(a)
+print(id(student))
