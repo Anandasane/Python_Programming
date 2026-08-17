@@ -61,7 +61,7 @@ print(max(numbers))
 print(sum(numbers))
 
 
-numberes.clear()
+numbers.clear()
 print(numbers)
 
 print('_-------------------------------tuple----------------------------------------')
@@ -87,14 +87,14 @@ print(len(t))
 
 print(t.count(33))
 
-print(t.index(29))
+print(t.index(24))
 
 print(23 in t)
 print(33 not in t)
 
 t1=34,53,23,65
 
-a,g,s,c=t
+a,g,s,c=t1
 
 print(a,g,s,c)
 
@@ -102,7 +102,7 @@ t3=t1+t2
 print(t3)
 print(t2*3)
 
-t4=((33,34)(55,32))
+t4=((33,34),(55,32))
 
 print(min(t1))
 print(max(t1))
@@ -228,4 +228,120 @@ permissions = {
     frozenset(["read", "write"]): "Admin",
     frozenset(["read"]): "User"
 }
+
+# convert set to frozenset
+
+s={1,23,4}
+fs=frozenset(s)
+print(fs)
+s=set(fs)
+print(s)
+
+print('-------------------------dictionary--------------------------')
+
+# dictionary stores data in key value pairs
+# keys are unique
+# values can be duplicate
+# unordered (insertion order preserved from python 3.7+)
+
+student={
+    'id':122,
+    'name':"anand".capitalize(),
+    'marks':99,
+    'rollno':23,
+    'course':'data analytics'
+}
+
+print(student)
+
+d1={'a':1,'b':2,'c':3}
+print(d1)
+
+d2=dict(name="ram", age=33,rollno=34)
+print(d2)
+# empty dictionary
+d={}
+print(d)
+
+# accessing dictionary values
+print(student['name'])
+print(student.get('marks'))
+print(student.get('grade','not found'))
+
+# add or update elements
+student['age']=22
+student['marks']=90
+print(student)
+# remove elements
+
+student.pop('marks')
+print(student)
+#remove last item
+student.popitem()
+print(student)
+
+# using del keyword
+del student['rollno']
+print(student)
+
+# print key values and items in dictionary
+print(student.items())
+print(student.keys())
+print(student.values())
+
+# prints length of the dictionary
+print(len(student))
+
+# loop through dictonary keys
+
+for k in student:
+    print(k)
+
+# loop through dictionary values
+
+for v in student.values():
+    print(v)
+
+# loop throught dictionary keys and values
+
+for k,v in student.items():
+    print(k,v)
+
+
+# check key exists
+print('name'in student)
+
+print('salary'in student)
+
+# copy dictionary
+d2=student.copy
+
+# update merge dictionaries
+d1={"a":1}
+d2={'b':2}
+
+d1.update(d2)
+print(d1)
+
+# from keys()
+keys=['id','name','age']
+d=dict.fromkeys(keys,None)
+print(d)
+
+# Nested dictionary
+
+Student={
+    'Name':'Rahul',
+    "marks":{"math":39,"science":35}
+
+}
+
+print(Student)
+
+
+
+# clear remove all items
+student.clear()
+print(student)
+
 
