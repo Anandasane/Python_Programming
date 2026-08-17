@@ -149,7 +149,7 @@ print(len(s))
 s={34,33,22,11,35}
 
 print(33 in s)
-print(34 no in s)
+print(34 not in s)
 
 a={1,2,3}
 b={3,4,5}
