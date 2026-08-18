@@ -18,10 +18,10 @@ class Student:
        print('changed student name is : ', s)
 
 
-
-
 s=Student()
 s.show()
 s.show_rollno()
-
 s.Entername('z')
+
+print(s.name)
+print(s.age)
