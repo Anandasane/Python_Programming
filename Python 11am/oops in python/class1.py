@@ -39,20 +39,45 @@ class bike:
       print('Name of the bike: ',self.name,'\nPrice is :',self.price,'\ncolor: ',self.color)
 
    # default Constructor
-   def __init__(self):
-      pass
+   # def __init__(self):
+   #    pass
+
+   def __init__(self,name,color,price):
+      print('it is a parameterized constructor ')
+      self.name =name
+      self.price=price
+      self.color=color
+      print(self.name,self.price,self.color)
+
    # No Argument constructor 
-   def __init__(self):
-      print('constructor is called  when object is created ')
-      self.price=12000
-      self.color='Yellow'
-      self.name='jawa'
+   # def __init__(self):
+   #    print('constructor is called  when object is created ')
+   #    self.price=12000
+   #    self.color='Yellow'
+   #    self.name='jawa'
 
 
-b=bike()
-c=bike()
-b.top_speed()
-b.show_details()
-print(b.color)
+b=bike('jawa','black',30000)
+c=bike('a','b',2000)
+
+print('============================Parameter constructor================================================')
+
+class login:
+   # user=''
+   # password=''
+
+   def show(self):
+      print(self.user)
+      print(self.password)
+
+
+   def __init__(self,u,p):
+      self.user=u
+      self.password=p
+
+ramesh=login('ramesh','123')
+ramesh.show()
+om=login('om','344')
+om.show()
 
 

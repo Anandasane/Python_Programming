@@ -138,4 +138,3 @@ print(student)
 print(type(student))
 
 print(id(student))
-
