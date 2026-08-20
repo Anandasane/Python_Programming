@@ -75,9 +75,53 @@ class login:
       self.user=u
       self.password=p
 
+
 ramesh=login('ramesh','123')
 ramesh.show()
 om=login('om','344')
 om.show()
+
+print('===================================Calculate class=================================================')
+
+
+class cal:
+   a=0
+   b=0
+   result=0
+
+   def add(self):
+      print(self.a+self.b)
+
+   def sub(self):
+      return  print(self.a-self.b)
+
+   def mul(self):
+      return print(self.a*self.b)
+
+   def __init__(self):
+      print('constructor called')
+      print(self.a,self.b,self.result)
+
+   def __init__(self,a,b):
+      print('parametrized constructor is called')
+      self.a=a
+      self.b=b
+      self.add()
+      self.sub()
+      self.mul()
+
+
+
+a=cal(20,30)
+a.add()
+a.sub()
+#print(a.sub())
+multiple=a.mul()
+print(multiple)
+
+b=cal(10,20)
+b.add()
+b.sub()
+b.mul()
 
 
