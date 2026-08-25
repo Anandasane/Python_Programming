@@ -1,3 +1,18 @@
-is_prime = lambda n:"Prime" if n > 1 and not any(n % i == 0 for i in range(2, int(n**0.5) + 1)) else "Not Prime"
-a = int(input('Enter a number: '))
-print(is_prime(a))
+a=[-24,42,5,3,2,-5,5,-24,-54,-23]
+def positive_number(a):
+    b=[]
+    for i in range(len(a)):
+        
+        if(a[i]>0):
+           yield a[i] 
+           b.append(a[i])
+           i+=1
+        #     print("Positive elements in list are: ",a[i])
+        #     i+=1
+        # else: 
+        #     print('negative elements in list are: ',a[i])
+        #     i+=1
+        # return b
+    return b
+c=positive_number(a)
+print(c)
