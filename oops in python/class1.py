@@ -144,3 +144,61 @@ class laptop:
 l=laptop(50000,'WHITE')
 l.showdetails('HP')
 l.show()
+
+print('===============================================Static method====================================')
+
+class Math:
+
+   c = 49
+   print('id of the class variable c: ',id(c))
+
+   @staticmethod
+   def add(a,b): # static Method
+      print(a+b+Math.c)
+      print('id of class variable using a object m: ',id(Math.c))
+      print(a+b)
+
+
+   def sub(self):# instance method
+      self.a=20
+      print(self.a)
+      print('id of instance variable: ',id(self.a))
+
+   def __init__(self):
+      self.x=20
+      self.y=35
+
+m=Math()
+print(m.sub())
+Math.add(10,15)
+
+
+
+print('============================using decorator===========================================')
+def dec(f):
+      def wrap(self,u,p): # parameter must be same
+         print('Login start')
+         f(self,u,p)    # parameter must as of wrap function
+         print('Login End')
+      return wrap
+
+class login:
+   # def dec(f):
+   #    def wrap(self,u,p):
+   #       print('Login start')
+   #       f(self,u,p)
+   #       print('Login End')
+   #    return wrap
+
+   @dec
+   def userlogin(self,u,p):
+      if(u=='abc'and p=='123'):
+         print('Login success')
+      else:
+         print('Invalid Login')
+
+l=login()
+l.userlogin('abc','123')
+l.userlogin(p='123',u='abc')
+
+

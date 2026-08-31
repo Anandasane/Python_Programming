@@ -1,18 +1,19 @@
-class laptop:
-   def showdetails(self,name):
-      n=500
-      print(name)
-      print(n,id(n))
 
-   def show(self):
-      self.n=700
-      print(self.n)
+class login:
+   def dec(f):
+      def wrap(self,u,p):
+         print('Login start')
+         f(self,u,p)
+         print('Login End')
+      return wrap
 
-   def __init__(self,p,c):
-      self.price=p
-      self.color=c
+   @dec
+   def userlogin(self,u,p):
+      if(u=='abc'and p=='123'):
+         print('Login success')
+      else:
+         print('Invalid Login')
 
-
-l=laptop(50000,'WHITE')
-l.showdetails('HP')
-l.show()
+l=login()
+l.userlogin('abc','123')
+l.userlogin(p='123',u='abc')
