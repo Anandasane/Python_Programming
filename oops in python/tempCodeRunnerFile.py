@@ -1,19 +1,36 @@
+print('=========================================BANK CLASS ENCAPSULATION==========================================')
 
-class login:
-   def dec(f):
-      def wrap(self,u,p):
-         print('Login start')
-         f(self,u,p)
-         print('Login End')
-      return wrap
+class Bank:
+   __bal=10000
 
-   @dec
-   def userlogin(self,u,p):
-      if(u=='abc'and p=='123'):
-         print('Login success')
+   def showbal(self):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         return f'Bank balance is :{self.__bal}'
       else:
-         print('Invalid Login')
+         return 'wrong pin'
 
-l=login()
-l.userlogin('abc','123')
-l.userlogin(p='123',u='abc')
+   def deposit(self,amount):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         self.__bal+=amount
+         return 'Amount deposited successfully'
+      else:
+         return 'wrong pin'
+
+   def withdraw(self,amount):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         if(amount>self.__bal):
+            return 'Insufficient balance'
+         else:
+            self.__bal-=amount
+            return 'Amount withdrawn successfully'
+      else:
+         return 'wrong pin'
+
+b=Bank()
+print(b.showbal())
+print(b.deposit(200))
+print(b.withdraw(100))
+print(b.showbal())
