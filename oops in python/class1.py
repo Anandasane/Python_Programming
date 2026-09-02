@@ -254,5 +254,56 @@ print(b.deposit(200))
 print(b.withdraw(100))
 print(b.showbal())
 
+print('====================================ATM using single level inheritance ============================')
 
+class Bank:
+   __bal=10000
+
+   def showbal(self):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         return f'Bank balance is :{self.__bal}'
+      else:
+         return 'wrong pin'
+
+   def deposit(self,amount):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         self.__bal+=amount
+         return 'Amount deposited successfully'
+      else:
+         return 'wrong pin'
+
+   def withdraw(self,amount):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         if(amount>self.__bal):
+            return 'Insufficient balance'
+         else:
+            self.__bal-=amount
+            return 'Amount withdrawn successfully'
+      else:
+         return 'wrong pin'
+
+
+class ATM(Bank):
+   def check_pin(self):
+      p=int(input('Enter a pin:'))
+      if(p==1234):
+         return 'Pin is correct'
+      else:
+         return 'wrong pin'
+   
+   def showbal(self):
+      return super().showbal()
+
+   def deposit(self,amount):
+      return super().deposit(amount)
+
+   def withdraw(self,amount):
+      return super().withdraw(amount)
+   
+
+
+   
 
