@@ -1,36 +1,33 @@
-print('=========================================BANK CLASS ENCAPSULATION==========================================')
+print('=================================heirarchyical inheritance==================================')
+
 
 class Bank:
-   __bal=10000
+   location= 'nagar'
 
+   def ifscc(self):
+      print('barbo1234')
+
+
+class acc1(Bank):
+   name='raju'
    def showbal(self):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         return f'Bank balance is :{self.__bal}'
-      else:
-         return 'wrong pin'
+      print(f'Bank balance of {self.name} is : 10000')
+      super().ifscc()
 
-   def deposit(self,amount):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         self.__bal+=amount
-         return 'Amount deposited successfully'
-      else:
-         return 'wrong pin'
+class acc2(Bank):
+   name='om'
+   def showbal(self):
+      print(f'Bank balance of {self.name} is : 20000')
+      super().ifscc()
 
-   def withdraw(self,amount):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         if(amount>self.__bal):
-            return 'Insufficient balance'
-         else:
-            self.__bal-=amount
-            return 'Amount withdrawn successfully'
-      else:
-         return 'wrong pin'
 
-b=Bank()
-print(b.showbal())
-print(b.deposit(200))
-print(b.withdraw(100))
-print(b.showbal())
+ac1=acc1()
+ac2=acc2()
+
+ac1.name
+ac1.showbal()
+ac1.location
+
+ac2.name
+ac2.showbal()
+ac2.location
