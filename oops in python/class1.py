@@ -1,4 +1,4 @@
-print('-------------------------------------------------oops classes ----------------------------------------------------------------')
+print('-----------------------------------------------------------------oops classes ----------------------------------------------------------------')
 
 class Student:    
     name= 'chetan'
@@ -26,7 +26,7 @@ s.Entername('z')
 print(s.name)
 print(s.age)
 
-print('================================Bike class=========================================================')
+print('========================================================Bike class======================================================================')
 class bike:
    name = "hayabusa"
    color='Red'
@@ -60,7 +60,7 @@ class bike:
 b=bike('jawa','black',30000)
 c=bike('a','b',2000)
 
-print('============================Parameter constructor================================================')
+print('================================================Parameter constructor======================================================================')
 
 class login:
    # user=''
@@ -81,7 +81,7 @@ ramesh.show()
 om=login('om','344')
 om.show()
 
-print('===================================Calculate class=================================================')
+print('=======================================================Calculate class========================================================================')
 
 
 class cal:
@@ -124,7 +124,7 @@ b.add()
 b.sub()
 b.mul()
 
-print('=============================laptop class===========================================')
+print('==============================================================laptop class==================================================================')
 
 class laptop:
    def showdetails(self,name):
@@ -145,7 +145,7 @@ l=laptop(50000,'WHITE')
 l.showdetails('HP')
 l.show()
 
-print('===============================================Static method====================================')
+print('============================================================Static method=================================================================')
 
 class Math:
 
@@ -174,7 +174,7 @@ Math.add(10,15)
 
 
 
-print('============================using decorator===========================================')
+print('=======================================================using decorator================================================================')
 def dec(f):
       def wrap(self,u,p): # parameter must be same
          print('Login start')
@@ -201,7 +201,7 @@ l=login()
 l.userlogin('abc','123')
 l.userlogin(p='123',u='abc')
 
-print('===============================================Encapsulation================================================')
+print('============================================================Encapsulation===================================================================')
 
 class bank:
    __bank=1242
@@ -217,7 +217,7 @@ p=int(input('Enter pin: '))
 print(b.showbal(p))
 # print(b.showbal(1234))
 
-print('=========================================BANK CLASS ENCAPSULATION==========================================')
+print('===================================================BANK CLASS ENCAPSULATION============================================================')
 
 class Bank:
    __bal=10000
@@ -254,61 +254,48 @@ print(b.deposit(200))
 print(b.withdraw(100))
 print(b.showbal())
 
-print('====================================ATM using single level inheritance ============================')
+
+
+
+print('==========================================================Single level inheritance=========================================================')
 
 class Bank:
-   __bal=10000
+   def __init__(self,n,b):
+      self.name =n
+      self.balance=b
 
-   def showbal(self):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         return f'Bank balance is :{self.__bal}'
-      else:
-         return 'wrong pin'
+   
+   def showbal(self,p):
+      if(p==123):
+         print(f'{self.name} account balance is: {self.balance}')
 
-   def deposit(self,amount):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         self.__bal+=amount
-         return 'Amount deposited successfully'
       else:
-         return 'wrong pin'
+         print('Invalid pin try again')
+
+   def deposite(self,a):
+      self.balance+=a
+      print(f'The new account balance is : {self.balance}')
+
+class Atm(Bank):
 
    def withdraw(self,amount):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         if(amount>self.__bal):
-            return 'Insufficient balance'
-         else:
-            self.__bal-=amount
-            return 'Amount withdrawn successfully'
+      if(self.balance<amount):
+         print("Insufficient Balance please try later: ")
       else:
-         return 'wrong pin'
+         self.balance-=amount
+         print(f'The current balance is : {self.balance}')
+
+acc1=Atm('raj',1000)
+acc1.showbal(123)
+acc1.deposite(200)
+acc1.withdraw(300)
+acc2=Atm('sham',2000)
+acc2.showbal(123)
+acc2.withdraw(100)
+acc2.deposite(400)
 
 
-class ATM(Bank):
-   def check_pin(self):
-      p=int(input('Enter a pin:'))
-      if(p==1234):
-         return 'Pin is correct'
-      else:
-         return 'wrong pin'
-   
-   def showbal(self):
-      return super().showbal()
-
-   def deposit(self,amount):
-      return super().deposit(amount)
-
-   def withdraw(self,amount):
-      return super().withdraw(amount)
-   
-b=Bank()
-a=ATM()
-
-print(b.showbal())
-
-print('=================================heirarchyical inheritance==================================')
+print('========================================================Hierarchical inheritance=========================================================')
 
 
 class Bank:
@@ -342,4 +329,28 @@ ac2.name
 ac2.showbal()
 ac2.location
    
+
+print('==========================================================Multiple inheritance=====================================================')
+
+class A:
+   # propertys = 1000
+
+   def land(self):
+      propertys = 1000
+      print(f"Class A inherited the vlaue is: {propertys}")
+
+
+class B:
+   propertys = 2000
+
+   def land(self):
+      A.land(self)
+      print(f"Class B inherited the vlaue is: {self.propertys}")
+
+
+class C(B,A):
+   pass
+
+c=C()
+c.land()
 

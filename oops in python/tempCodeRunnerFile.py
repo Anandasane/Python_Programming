@@ -1,33 +1,23 @@
-print('=================================heirarchyical inheritance==================================')
+print('==========================================================Multiple inheritance=====================================================')
+
+class A:
+   # propertys = 1000
+
+   def land(self):
+      propertys = 1000
+      print(f"Class A inherited the vlaue is: {propertys}")
 
 
-class Bank:
-   location= 'nagar'
+class B:
+   propertys = 2000
 
-   def ifscc(self):
-      print('barbo1234')
-
-
-class acc1(Bank):
-   name='raju'
-   def showbal(self):
-      print(f'Bank balance of {self.name} is : 10000')
-      super().ifscc()
-
-class acc2(Bank):
-   name='om'
-   def showbal(self):
-      print(f'Bank balance of {self.name} is : 20000')
-      super().ifscc()
+   def land(self):
+      A.land(self)
+      print(f"Class B inherited the vlaue is: {self.propertys}")
 
 
-ac1=acc1()
-ac2=acc2()
+class C(B,A):
+   pass
 
-ac1.name
-ac1.showbal()
-ac1.location
-
-ac2.name
-ac2.showbal()
-ac2.location
+c=C()
+c.land()
