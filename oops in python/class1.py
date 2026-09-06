@@ -354,3 +354,70 @@ class C(B,A):
 c=C()
 c.land()
 
+print('==========================================================Multilevel inheritance=====================================================')
+
+class A:
+   bal=1000
+   def showbal(self):
+      if(self.bal>0):
+         print(f'Bank balance is : {self.bal}')
+      else:
+         print('Insufficient balance')
+
+
+class B(A):
+   def deposit(self,amount):
+      self.bal+=amount
+      print(f'Amount deposited successfully and new balance is : {self.bal}')
+
+class C(B):
+   def withdraw(self,amount):
+      if(self.bal<amount):
+         print('Insufficient balance')
+      else:
+         self.bal-=amount
+         print(f'Amount withdrawn successfully and new balance is : {self.bal}')
+
+a=C()
+print(a.bal)
+a.showbal()
+a.withdraw(500)
+a.deposit(1000)
+
+print('==========================================================Hybrid inheritance=====================================================')
+
+print('==========================================================Multiple and hierarchical Hybrid inheritance=====================================================')
+
+class A:
+   def show(self):
+      print('Class A method is called')
+
+
+class B(A):
+   def show(self):
+      print('Class B method is called')
+
+
+class C(A):
+   def show(self):
+      B.show(self)
+      print('Class C method is called')
+
+
+class D(B,C):
+   def show(self):
+      print('Class D method is called')
+      super().show()
+
+
+d=D()
+d.show()
+a=super(D,d)
+a.show()
+b=super(D,d)
+b.show()
+c=super(D,d)
+c.show()
+
+
+
