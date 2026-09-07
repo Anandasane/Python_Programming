@@ -385,6 +385,89 @@ a.withdraw(500)
 a.deposit(1000)
 
 print('==========================================================Hybrid inheritance=====================================================')
+print('==========================================================single level and multilevel hybrid inheritance==========================')
+
+class Parent:
+
+   genetics = 100
+
+   def eyes(self, color):
+      self.color = color
+      print(f'The color of the eyes is: {self.color}')
+
+   def hairs(self, c):
+      self.c = c
+      print(f'The color of the hairs is: {self.c}')
+
+
+class Child(Parent):
+
+   def height(self,h):
+      self.h=h
+      print(f'the height of the child is : {self.h}')
+      super().eyes('black')
+      super().hairs('black')
+
+class Grandchild(Child):
+
+   def weight(self,w):
+      self.w=w
+      print(f'The weight of the Grand child is: {self.w}')
+      super().height(160)
+
+class Teacher(Grandchild):
+
+   def teach(self,s):
+      self.s=s
+      print(f'Teacher teach grandchild {self.s} subject')
+      super().weight(65)
+
+t=Teacher()
+t.eyes('blue')
+t.hairs('blonde')
+t.height(165)
+t.weight(55)
+t.teach('Python')
+
+c=Child()
+
+g=Grandchild()
+
+print('=========================================single level and multiple hybrid inheritance================================================')
+
+class Father:
+   def skills(self):
+     Mother.hobbies('cooking')
+     print("Gardening and coding")
+
+
+class Mother:
+   def hobbies(self):
+      print("Cooking and painting")
+
+
+class Child(Father, Mother):
+   def own_skill(self):
+      print("Playing guitar")
+      super().skills()
+      
+
+
+class Grandchild(Child):
+   def sports(self):
+      print("Playing cricket")
+      super().own_skill()
+
+
+g=Grandchild()
+g.sports()
+g.own_skill()
+g.hobbies()
+g.skills()
+
+print('==========================================================single level and hierarchical hybrid inheritance ===============================')
+
+
 
 print('==========================================================Multiple and hierarchical Hybrid inheritance=====================================================')
 

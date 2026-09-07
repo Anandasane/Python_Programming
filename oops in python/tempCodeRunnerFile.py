@@ -1,34 +1,29 @@
-print('==========================================================Hybrid inheritance=====================================================')
-
-print('==========================================================Multiple and hierarchical Hybrid inheritance=====================================================')
-
-class A:
-   def show(self):
-      print('Class A method is called')
+class Father:
+   def skills(self):
+     Mother.hobbies('cooking')
+     print("Gardening and coding")
 
 
-class B(A):
-   def show(self):
-      print('Class B method is called')
+class Mother:
+   def hobbies(self):
+      print("Cooking and painting")
 
 
-class C(A):
-   def show(self):
-      B.show(self)
-      print('Class C method is called')
+class Child(Father, Mother):
+   def own_skill(self):
+      print("Playing guitar")
+      super().skills()
+      
 
 
-class D(B,C):
-   def show(self):
-      print('Class D method is called')
-      super().show()
+class Grandchild(Child):
+   def sports(self):
+      print("Playing cricket")
+      super().own_skill()
 
 
-d=D()
-d.show()
-a=super(D,d)
-a.show()
-b=super(D,d)
-b.show()
-c=super(D,d)
-c.show()
+g=Grandchild()
+g.sports()
+g.own_skill()
+g.hobbies()
+g.skills()

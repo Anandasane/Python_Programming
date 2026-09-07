@@ -68,9 +68,9 @@ def create_spend_chart(categories):
         line = f"{i:>3}|"
         for p in percentages:
             if p >= i:
-                line += " o "
+                line += " ⭕ "
             else:
-                line += "   "
+                line += " ✔  "
         # Add one extra space to have exactly two spaces after the final bar
         line += " "
         chart += line + "\n"
@@ -96,8 +96,8 @@ def create_spend_chart(categories):
 
 food = Category('Food')
 
-food.deposit(1000, 'initial deposit')
 print(food.get_balance())
+food.deposit(1000, 'initial deposit')
 food.withdraw(10.15, 'groceries')
 food.withdraw(15.89, 'restaurant and food')
 clothing = Category('Clothing')
