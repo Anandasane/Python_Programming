@@ -1,13 +1,14 @@
-class Animal:
-    def breathe(self): print("Breathing")
+print('===========================================overriding======================================================')
+class A:
+    def show(self):
+        print("In A")
 
-class Mammal(Animal):
-    def feed_milk(self): print("Feeding milk")
+class B(A):
+    def show(self):
+        print("In B")
 
-class Bird(Animal):
-    def fly(self): print("Flying")
+b=B()
+b.show()
 
-class Dog(Mammal):
-    def bark(self): print("Barking")
-
-print(Dog.__mro__) 
+a=A()
+a.show()
