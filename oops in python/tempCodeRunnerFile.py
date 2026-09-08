@@ -1,29 +1,13 @@
-class Father:
-   def skills(self):
-     Mother.hobbies('cooking')
-     print("Gardening and coding")
+class Animal:
+    def breathe(self): print("Breathing")
 
+class Mammal(Animal):
+    def feed_milk(self): print("Feeding milk")
 
-class Mother:
-   def hobbies(self):
-      print("Cooking and painting")
+class Bird(Animal):
+    def fly(self): print("Flying")
 
+class Dog(Mammal):
+    def bark(self): print("Barking")
 
-class Child(Father, Mother):
-   def own_skill(self):
-      print("Playing guitar")
-      super().skills()
-      
-
-
-class Grandchild(Child):
-   def sports(self):
-      print("Playing cricket")
-      super().own_skill()
-
-
-g=Grandchild()
-g.sports()
-g.own_skill()
-g.hobbies()
-g.skills()
+print(Dog.__mro__) 
