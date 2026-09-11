@@ -110,4 +110,8 @@ b.sound()   # Output: Bark
 
 print('========================================================Polymorphism with Interfaces (Abstract Base Classes)=======================================')
 
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
 

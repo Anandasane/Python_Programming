@@ -9,38 +9,51 @@ except ZeroDivisionError:
 print('End')
 
 
-try: 
+try:
     a=int(input('Enter a number: '))
+    
 except ValueError:
     print('Error: Invalid input. Please enter a valid number.')
 
 
 try:
-    b=int(input('Enter another number: '))
+    a=
 except ValueError:
     print('Error: Invalid input. Please enter a valid number.')
 
 
 try:
     result=a/b
-    print('Result:', result)
+    print(f'The result of {a} divided by {b} is: {result}')  
 except ZeroDivisionError:
-    print('Error: Division by zero is not allowed.')
+    print('this is a zero Division error.')
 
-except typeError:
-    print('Error: Invalid input. Please enter a valid number.')
+try:
+    a=
+except TypeError:
+    print('this is a Type Error.')
 
-except boundaryError:
-    print('Error: Invalid input. Please enter a valid number.')
+try:
+    a=
+except NameError:
+    print('This is Name error.')
 
-except indexError:
-    print('Error: Invalid input. Please enter a valid number.')
+try:
+    a=
+except ValueError:
+    print('This is a  Value Error.')
 
+try:
+    a=
 except AttributeError:
-    print('Error: Invalid input. Please enter a valid number.')
+    print('This is a Attribute Error.')
 
-except valueError:
-    print('Error: Invalid input. Please enter a valid number.')
+try:
+    a=
+except KeyError:
+    print('This is a key Error.')
 
-except error:
-    print('Error: Invalid input. Please enter a valid number.')
+try:
+    a=
+except IndexError:
+    print('This is an Index Error.')

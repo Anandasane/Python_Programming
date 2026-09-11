@@ -1,29 +1,22 @@
-print('============================================Polymorphism with Classes======================================================')
+from abc import ABC, abstractmethod
 
-class Shape:
+class Shape(ABC):
+    @abstractmethod
     def area(self):
         pass
 
 class Rectangle(Shape):
     def __init__(self, width, height):
         self.width = width
-        self.height = height
-
+        self.height =height
+    
     def area(self):
-        return self.width * self.height
+        print(f"the Area of the rectangle is {self.width * self.height}")
+    
+    def parameter(self):
+        print(f"the parameter of the rectangle is {self.width*2+self.height*2}")
 
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return 3.14 * self.radius * self.radius
-
-def area(shape):
-    print("Area:", shape.area())
-
-a1= Rectangle(5, 10)
-a2= Circle(7)
-
-area(a1)
-area(a2)
+    
+r=Rectangle(5,10)
+r.area()
+r.parameter()
