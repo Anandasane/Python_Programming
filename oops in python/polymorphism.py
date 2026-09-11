@@ -62,7 +62,7 @@ lets_fly(Airplane())
 print('============================================Polymorphism with Classes======================================================')
 
 class Shape:
-    def area(self):
+    def area(self):#
         pass
 
 class Rectangle(Shape):
@@ -90,5 +90,24 @@ area(a1)
 area(a2)
 
 print('========================================================Polymorphism with Inheritance (Method Overriding)=======================================')
+
+class Animal:
+    def sound(self):
+        print("Some sound")
+
+class Cat(Animal):
+    def sound(self):
+        print("Meow")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+
+a = Cat()
+a.sound()   # Output: Meow
+b = Dog()
+b.sound()   # Output: Bark
+
+print('========================================================Polymorphism with Interfaces (Abstract Base Classes)=======================================')
 
 
