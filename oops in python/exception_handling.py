@@ -159,3 +159,7 @@ try:
     f()
 except UnboundLocalError:
     print('This is an Unbound Local Error.')
+
+
+print('=======================================================Multiple Exception===================================================')
+
