@@ -163,3 +163,33 @@ except UnboundLocalError:
 
 print('=======================================================Multiple Exception===================================================')
 
+try:
+    u=int(input('Enter your password: '))
+except Exception as e:
+    print("Error: ",e )
+else:
+    print('you can login')
+
+finally:
+    print('you have successfully logged in')
+
+
+print('---------------------')
+
+try:
+    u=int(input('Enter you name: '))
+    raise Exception("Name should be Sting ")
+except Exception as e:
+    print("Error: ",e)
+else:
+    print('Thankyou')
+# finally:
+#     print("Dhanayawad Amchi girli ")
+
+
+print('============================================')
+
+
+
+
+
