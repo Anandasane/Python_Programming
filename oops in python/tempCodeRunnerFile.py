@@ -1,9 +1,11 @@
-print('---------------------')
+print('============================================')
 
 try:
-    u=int(input('Enter you name: '))
-    raise Exception("Name should be Sting ")
+    i=int(input('enter your name : '))
 except Exception as e:
-    print("Error: ",e)
+    print('Error: ', e)
 else:
-    print('Thankyou')
+    print('you can login')
+
+finally: 
+    print('thank you for your time ')
