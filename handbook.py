@@ -121,3 +121,6 @@ marks_list.sort()
 print("\nThe marks in sorted manner are:")
 print(marks_list)
 
+print('the Global varaibles are: ',globals())
+print('====================================')
+print('the local varaibles are: ',locals())

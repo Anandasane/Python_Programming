@@ -1,4 +1,3 @@
-file = open('myfile.text','r')
-content = file.read()
-print(content)
-file.close()
+print('the Global varaibles are: ',globals())
+print('====================================')
+print('the local varaibles are: ',locals())

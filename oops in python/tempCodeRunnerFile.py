@@ -1,11 +1,3 @@
-print('============================================')
-
-try:
-    i=int(input('enter your name : '))
-except Exception as e:
-    print('Error: ', e)
-else:
-    print('you can login')
-
-finally: 
-    print('thank you for your time ')
+print('the Global varaibles are: ',globals())
+print('====================================')
+print('the local varaibles are: ',locals())
