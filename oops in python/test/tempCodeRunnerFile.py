@@ -1,15 +1,19 @@
-class Employee:
-    def __init__(self,id,name,department,salary):
-        self.id=id
-        self.name=name
-        self.department=department
-        self.salary = salary
-        print(f"The Id of the Employee is {self.id}")
-        print(f"The Name of the Employee is {self.name}")
-        print(f"The department of the Employee is {self.department}")
-        print(f"The salary of the Employee is {self.salary}")
+class Password:
+    __password=123
 
+    def set_password(self,np):
+        self.np=np
+        if(np:=(int(input("Enter new password"))) == self.__password):
+            self.__password = np
+            print("New password is set successfully ")
+        else:
+            print("Enter the right password Try again")
 
+    def get_password(self):
+        return f'The new password is {self.__password}'
+    
+p=Password()
+p.get_password()
 
-e=Employee(23,'shubham','HR',30000)
-e=Employee(45,'Tushar','Data Manager',500000)
+p.set_password()
+p.get_password
