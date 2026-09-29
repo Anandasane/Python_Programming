@@ -1,20 +1,15 @@
+class Employee:
+    def __init__(self,id,name,department,salary):
+        self.id=id
+        self.name=name
+        self.department=department
+        self.salary = salary
+        print(f"The Id of the Employee is {self.id}")
+        print(f"The Name of the Employee is {self.name}")
+        print(f"The department of the Employee is {self.department}")
+        print(f"The salary of the Employee is {self.salary}")
 
-class Book:
-    def show(self,title,author,price):
-        self.title=title
-        self.author=author
-        self.price=price
-        print(f"{self.title} book with author {self.author} and price {self.price}")
 
 
-a=Book()
-b=Book()
-c=Book()
-d=Book()
-e=Book()
-
-a.show('bhagvat gita', 'krishna',200)
-b.show("harry potter",'harry',2000)
-c.show('english book','english sir',2300)
-d.show('math book', 'math sir',400)
-e.show('history book', 'history sir', 300)
+e=Employee(23,'shubham','HR',30000)
+e=Employee(45,'Tushar','Data Manager',500000)

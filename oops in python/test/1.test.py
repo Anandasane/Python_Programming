@@ -78,6 +78,32 @@ print('=================================== Constructor =========================
 print('=================================== Question 1 ==========================================')
 
 class Student:
-    def __init__(self):
-        pass
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+        print(f"Name of the Student is {self.name}")
+        print(f"Marks of the student is {self.marks}")
+
+
+s=Student('tushar',98)
+s=Student('shubham',27)
+
+print('=================================== Question 2 =====================================')
+
+class Employee:
+    def __init__(self,id,name,department,salary):
+        self.id=id
+        self.name=name
+        self.department=department
+        self.salary = salary
+        print(f"The Id of the Employee is {self.id}")
+        print(f"The Name of the Employee is {self.name}")
+        print(f"The department of the Employee is {self.department}")
+        print(f"The salary of the Employee is {self.salary}")
+
+
+
+e=Employee(23,'shubham','HR',30000)
+e=Employee(45,'Tushar','Data Manager',500000)
+
 
