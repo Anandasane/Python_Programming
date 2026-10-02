@@ -46,3 +46,7 @@ def shortest_path(matrix, start_node, target_node=None):
     return distances, paths
 
 shortest_path(adj_matrix,0,5)
+
+print('the Global varaibles are: ',globals())
+print('====================================')
+print('the local varaibles are: ',locals())
